@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wjh.ims.dal.mapper.supplier.ext.SupplierMapperExt">
+  <resultMap id="BaseResultMap" type="com.wjh.ims.dal.model.supplier.Supplier">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="no" jdbcType="VARCHAR" property="no" />
+    <result column="abbr" jdbcType="VARCHAR" property="abbr" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="contacts" jdbcType="VARCHAR" property="contacts" />
+    <result column="contacts_phone" jdbcType="VARCHAR" property="contactsPhone" />
+    <result column="bank" jdbcType="VARCHAR" property="bank" />
+    <result column="bank_no" jdbcType="VARCHAR" property="bankNo" />
+    <result column="remarks" jdbcType="VARCHAR" property="remarks" />
+    <result column="gmt_create" jdbcType="TIMESTAMP" property="gmtCreate" />
+    <result column="gmt_modified" jdbcType="TIMESTAMP" property="gmtModified" />
+  </resultMap>
+
+  <select id="selectMaxSupplierNo" resultType="string">
+    select MAX(no) from supplier
+  </select>
+</mapper>

@@ -1,0 +1,32 @@
+25 三月 2019 16:35:04 DEBUGGoodsMapper.selectByExample - ooo Using Connection [ProxyConnection[PooledConnection[net.sf.log4jdbc.ConnectionSpy@f7b4af]]]
+25 三月 2019 16:35:04 DEBUGGoodsMapper.selectByExample - ==>  Preparing: select id, goods_name, goods_no, type_no, spell, spec, aux_unit_first, aux_unit_second, aux_val_first, aux_val_second, num, effective_days, remarks, gmt_create, gmt_modified from goods order by gmt_create desc 
+25 三月 2019 16:35:04 DEBUGGoodsMapper.selectByExample - ==> Parameters: 
+25 三月 2019 16:35:04 DEBUGGoodsMapper.selectByExample - <==      Total: 2
+25 三月 2019 16:37:49 DEBUGGoodsMapper.selectByExample - ooo Using Connection [ProxyConnection[PooledConnection[net.sf.log4jdbc.ConnectionSpy@f7b4af]]]
+25 三月 2019 16:37:49 DEBUGGoodsMapper.selectByExample - ==>  Preparing: select id, goods_name, goods_no, type_no, spell, spec, aux_unit_first, aux_unit_second, aux_val_first, aux_val_second, num, effective_days, remarks, gmt_create, gmt_modified from goods order by gmt_create desc 
+25 三月 2019 16:37:49 DEBUGGoodsMapper.selectByExample - ==> Parameters: 
+25 三月 2019 16:37:49 DEBUGGoodsMapper.selectByExample - <==      Total: 2
+25 三月 2019 16:38:56 DEBUGGoodsMapper.selectByExample - ooo Using Connection [ProxyConnection[PooledConnection[net.sf.log4jdbc.ConnectionSpy@1b2faa6]]]
+25 三月 2019 16:38:56 DEBUGGoodsMapper.selectByExample - ==>  Preparing: select id, goods_name, goods_no, type_no, spell, spec, aux_unit_first, aux_unit_second, aux_val_first, aux_val_second, num, effective_days, remarks, gmt_create, gmt_modified from goods order by gmt_create desc 
+25 三月 2019 16:38:56 DEBUGGoodsMapper.selectByExample - ==> Parameters: 
+25 三月 2019 16:38:56 DEBUGGoodsMapper.selectByExample - <==      Total: 2
+25 三月 2019 16:41:35 DEBUGGoodsMapper.selectByExample - ooo Using Connection [ProxyConnection[PooledConnection[net.sf.log4jdbc.ConnectionSpy@df16aa]]]
+25 三月 2019 16:41:35 DEBUGGoodsMapper.selectByExample - ==>  Preparing: select id, goods_name, goods_no, type_no, spell, spec, aux_unit_first, aux_unit_second, aux_val_first, aux_val_second, num, effective_days, remarks, gmt_create, gmt_modified from goods order by gmt_create desc 
+25 三月 2019 16:41:35 DEBUGGoodsMapper.selectByExample - ==> Parameters: 
+25 三月 2019 16:41:35 DEBUGGoodsMapper.selectByExample - <==      Total: 2
+25 三月 2019 16:50:46 DEBUGGoodsMapper.selectByExample - ooo Using Connection [ProxyConnection[PooledConnection[net.sf.log4jdbc.ConnectionSpy@df16aa]]]
+25 三月 2019 16:50:46 DEBUGGoodsMapper.selectByExample - ==>  Preparing: select id, goods_name, goods_no, type_no, spell, spec, aux_unit_first, aux_unit_second, aux_val_first, aux_val_second, num, effective_days, remarks, gmt_create, gmt_modified from goods order by gmt_create desc 
+25 三月 2019 16:50:46 DEBUGGoodsMapper.selectByExample - ==> Parameters: 
+25 三月 2019 16:50:46 DEBUGGoodsMapper.selectByExample - <==      Total: 2
+25 三月 2019 16:51:05 DEBUGGoodsMapper.selectByExample - ooo Using Connection [ProxyConnection[PooledConnection[net.sf.log4jdbc.ConnectionSpy@df16aa]]]
+25 三月 2019 16:51:05 DEBUGGoodsMapper.selectByExample - ==>  Preparing: select id, goods_name, goods_no, type_no, spell, spec, aux_unit_first, aux_unit_second, aux_val_first, aux_val_second, num, effective_days, remarks, gmt_create, gmt_modified from goods order by gmt_create desc 
+25 三月 2019 16:51:05 DEBUGGoodsMapper.selectByExample - ==> Parameters: 
+25 三月 2019 16:51:05 DEBUGGoodsMapper.selectByExample - <==      Total: 2
+25 三月 2019 16:51:30 DEBUGGoodsMapper.selectByExample - ooo Using Connection [ProxyConnection[PooledConnection[net.sf.log4jdbc.ConnectionSpy@df16aa]]]
+25 三月 2019 16:51:30 DEBUGGoodsMapper.selectByExample - ==>  Preparing: select id, goods_name, goods_no, type_no, spell, spec, aux_unit_first, aux_unit_second, aux_val_first, aux_val_second, num, effective_days, remarks, gmt_create, gmt_modified from goods order by gmt_create desc 
+25 三月 2019 16:51:30 DEBUGGoodsMapper.selectByExample - ==> Parameters: 
+25 三月 2019 16:51:30 DEBUGGoodsMapper.selectByExample - <==      Total: 2
+25 三月 2019 16:51:49 DEBUGGoodsMapper.selectByExample - ooo Using Connection [ProxyConnection[PooledConnection[net.sf.log4jdbc.ConnectionSpy@df16aa]]]
+25 三月 2019 16:51:49 DEBUGGoodsMapper.selectByExample - ==>  Preparing: select id, goods_name, goods_no, type_no, spell, spec, aux_unit_first, aux_unit_second, aux_val_first, aux_val_second, num, effective_days, remarks, gmt_create, gmt_modified from goods order by gmt_create desc 
+25 三月 2019 16:51:49 DEBUGGoodsMapper.selectByExample - ==> Parameters: 
+25 三月 2019 16:51:49 DEBUGGoodsMapper.selectByExample - <==      Total: 2

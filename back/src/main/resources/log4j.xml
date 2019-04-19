@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="GB2312"?>
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+
+	<appender name="DEFAULT-APPENDER"
+		class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="file" value="logs/default.log" />
+		<param name="append" value="true" />
+		<param name="encoding" value="UTF-8" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{dd MMM yyyy HH:mm:ss} %-5p%c{2} - %m%n"/>
+		</layout>
+	</appender>
+
+	<appender name="EXT-APPENDER"
+		class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="file" value="logs/ext.log" />
+		<param name="append" value="true" />
+		<param name="encoding" value="UTF-8" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{dd MMM yyyy HH:mm:ss} %-5p%c{2} - %m%n"/>
+		</layout>
+	</appender>
+
+	<appender name="ERROR-APPENDER"
+			  class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="file" value="logs/error.log" />
+		<param name="append" value="true" />
+		<param name="encoding" value="UTF-8" />
+		<param name="threshold" value="error" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{dd MMM yyyy HH:mm:ss} %-5p%c{2} - %m%n"/>
+		</layout>
+	</appender>
+
+	<!-- [公共Appender] 控制台STDOUT -->
+	<appender name="STDOUT-APPENDER" class="org.apache.log4j.ConsoleAppender">
+		<param name="target" value="System.out" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-5p %c{2} - %m%n" />
+		</layout>
+
+	</appender>
+
+	<!-- [公共Appender] 控制台STDERR -->
+	<appender name="STDERR-APPENDER" class="org.apache.log4j.ConsoleAppender">
+
+		<param name="target" value="System.err" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-5p %c{2} - %m%n" />
+		</layout>
+	</appender>
+
+    <appender name="SQL_APPENDER" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="file" value="logs/sql.log" />
+        <param name="append" value="true" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{dd MMM yyyy HH:mm:ss} %-5p%c{2} - %m%n"/>
+        </layout>
+    </appender>
+
+	<!--
+		=====================================================================
+	-->
+	<!--
+		Loggers
+	-->
+	<!--
+		=====================================================================
+	-->
+
+	<!-- [公共Logger] 控制台STDOUT - STDOUT -->
+	<logger name="STDOUT" additivity="false">
+		<level value="info" />
+		<appender-ref ref="STDOUT-APPENDER" />
+	</logger>
+
+	<!-- [公共Logger] 控制台STDERR - STDERR -->
+	<logger name="STDERR" additivity="false">
+		<level value="info" />
+		<appender-ref ref="STDERR-APPENDER" />
+	</logger>
+
+    <logger name="org.mybatis" additivity="false">
+        <level value="debug" />
+        <appender-ref ref="ERROR-APPENDER" />
+        <appender-ref ref="STDOUT-APPENDER" />
+    </logger>
+	
+
+	<logger name="org.apache.ibatis" additivity="false">
+		<level value="debug" />
+		<appender-ref ref="ERROR-APPENDER" />
+		<appender-ref ref="STDOUT-APPENDER" />
+	</logger>
+
+	<logger name="java.sql" additivity="false">
+		<level value="debug" />
+		<appender-ref ref="ERROR-APPENDER" />
+		<appender-ref ref="STDOUT-APPENDER" />
+	</logger>
+
+	<logger name="com.wjh.ims" additivity="false">
+		<level value="debug" />
+		<appender-ref ref="EXT-APPENDER" />
+		<appender-ref ref="STDOUT-APPENDER" />
+		<appender-ref ref="ERROR-APPENDER" />
+	</logger>
+
+
+    <logger name="jdbc.sqlonly" additivity="false">
+        <level value="debug"/>
+        <appender-ref ref="SQL_APPENDER"/>
+        <appender-ref ref="STDOUT-APPENDER" />
+    </logger>
+
+    <!-- log SQL with timing information, post execution -->
+    <logger name="jdbc.sqltiming" additivity="false">
+        <level value="fatal"/>
+        <appender-ref ref="SQL_APPENDER"/>
+    </logger>
+
+    <!-- only use the two logs below to trace ALL JDBC information,
+         NOTE:  This can be very voluminous!  -->
+
+    <!-- log all jdbc calls except ResultSet calls -->
+    <logger name="jdbc.audit" additivity="false">
+        <level value="fatal"/>
+        <appender-ref ref="SQL_APPENDER"/>
+    </logger>
+
+    <!-- log the jdbc ResultSet calls -->
+    <logger name="jdbc.resultset" additivity="false">
+        <level value="fatal"/>
+        <appender-ref ref="SQL_APPENDER"/>
+    </logger>
+
+    <!-- log connection open/close events and dump of all open connection numbers -->
+    <logger name="jdbc.connection" additivity="false">
+        <level value="fatal"/>
+        <appender-ref ref="SQL_APPENDER"/>
+    </logger>
+	
+	<!--
+		=====================================================================
+	-->
+	<!--
+		Root logger
+	-->
+	<!--
+		=====================================================================
+	-->
+
+	<root>
+		<level value="error" />
+		<appender-ref ref="ERROR-APPENDER" />
+	</root>
+
+</log4j:configuration>
+
