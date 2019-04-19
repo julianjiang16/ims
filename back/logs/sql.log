@@ -1,0 +1,32 @@
+25 三月 2019 16:35:04 DEBUGjdbc.sqlonly -  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+1. select id, goods_name, goods_no, type_no, spell, spec, aux_unit_first, aux_unit_second, aux_val_first, 
+aux_val_second, num, effective_days, remarks, gmt_create, gmt_modified from goods order by 
+gmt_create desc 
+25 三月 2019 16:37:49 DEBUGjdbc.sqlonly -  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+1. select id, goods_name, goods_no, type_no, spell, spec, aux_unit_first, aux_unit_second, aux_val_first, 
+aux_val_second, num, effective_days, remarks, gmt_create, gmt_modified from goods order by 
+gmt_create desc 
+25 三月 2019 16:38:56 DEBUGjdbc.sqlonly -  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+1. select id, goods_name, goods_no, type_no, spell, spec, aux_unit_first, aux_unit_second, aux_val_first, 
+aux_val_second, num, effective_days, remarks, gmt_create, gmt_modified from goods order by 
+gmt_create desc 
+25 三月 2019 16:41:35 DEBUGjdbc.sqlonly -  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+1. select id, goods_name, goods_no, type_no, spell, spec, aux_unit_first, aux_unit_second, aux_val_first, 
+aux_val_second, num, effective_days, remarks, gmt_create, gmt_modified from goods order by 
+gmt_create desc 
+25 三月 2019 16:50:46 DEBUGjdbc.sqlonly -  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+1. select id, goods_name, goods_no, type_no, spell, spec, aux_unit_first, aux_unit_second, aux_val_first, 
+aux_val_second, num, effective_days, remarks, gmt_create, gmt_modified from goods order by 
+gmt_create desc 
+25 三月 2019 16:51:05 DEBUGjdbc.sqlonly -  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+1. select id, goods_name, goods_no, type_no, spell, spec, aux_unit_first, aux_unit_second, aux_val_first, 
+aux_val_second, num, effective_days, remarks, gmt_create, gmt_modified from goods order by 
+gmt_create desc 
+25 三月 2019 16:51:30 DEBUGjdbc.sqlonly -  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+1. select id, goods_name, goods_no, type_no, spell, spec, aux_unit_first, aux_unit_second, aux_val_first, 
+aux_val_second, num, effective_days, remarks, gmt_create, gmt_modified from goods order by 
+gmt_create desc 
+25 三月 2019 16:51:49 DEBUGjdbc.sqlonly -  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+1. select id, goods_name, goods_no, type_no, spell, spec, aux_unit_first, aux_unit_second, aux_val_first, 
+aux_val_second, num, effective_days, remarks, gmt_create, gmt_modified from goods order by 
+gmt_create desc 

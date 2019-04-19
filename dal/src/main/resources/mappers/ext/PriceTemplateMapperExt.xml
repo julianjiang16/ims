@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wjh.ims.dal.mapper.priceTemplate.ext.PriceTemplateMapperExt">
+  <resultMap id="BaseResultMap" type="com.wjh.ims.dal.model.priceTemplate.PriceTemplate">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="no" jdbcType="VARCHAR" property="no" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="type" jdbcType="CHAR" property="type" />
+    <result column="remarks" jdbcType="VARCHAR" property="remarks" />
+    <result column="gmt_create" jdbcType="TIMESTAMP" property="gmtCreate" />
+    <result column="gmt_modified" jdbcType="TIMESTAMP" property="gmtModified" />
+  </resultMap>
+
+  <select id="selectMaxPriceTemplateNo" resultType="string">
+    select MAX(no) from price_template
+  </select>
+</mapper>
